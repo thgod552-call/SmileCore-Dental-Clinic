@@ -584,7 +584,7 @@ header.header-float.header-light .header-inner{
 }
 
 .text-light .crumb a{
-  color:white;
+  color:rgba(255, 255, 255, 1.0);
 }
 
 
@@ -998,7 +998,7 @@ header.smaller.scroll-light #btn-extra span{
   padding: 0px;
   text-align: left;
   font-weight: bold;
-  color: #ffffff;
+  color: #586383;
 }
 
 #mainmenu ul.mega>li ul {
@@ -1288,7 +1288,7 @@ section.no-bg,
 
 footer {
   color: var(--body-font-color-dark);
-  background: black;
+  background: var(--bg-dark-2);
   padding: 100px 0 0 0;
 }
 
