@@ -222,22 +222,22 @@
             </section>
 
         <section>
-                <div class="container">
+              <div class="container">
                     <div class="row gy-4 gx-5 align-items-center">
                         <div class="col-lg-6">
                             <div class="row g-4 align-items-center">
                                 <div class="col-6 text-end">
                                     <div class="w-80 rounded-1 overflow-hidden mb-25 wow zoomIn d-inline-block">
-                                        <img src="images/misc/s2.webp" class="w-100 wow scaleIn" alt="">
+                                        <img src="images/misc/image2.webp" class="w-100 wow scaleIn" alt="">
                                     </div>
                                     <div class="w-100 rounded-1 overflow-hidden mb-25 wow zoomIn d-inline-block">
-                                        <img src="images/misc/s3.webp" class="w-100 wow scaleIn" alt="">
+                                        <img src="images/misc/Image3.webp" class="w-100 wow scaleIn" alt="">
                                     </div>
                                 </div>
 
                                 <div class="col-6">
                                     <div class="w-100 rounded-1 overflow-hidden mb-25 wow zoomIn d-inline-block">
-                                        <img src="images/misc/p3.webp" class="w-100 wow scaleIn" alt="">
+                                        <img src="images/misc/Image4.webp" class="w-100 wow scaleIn" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -635,6 +635,100 @@
         </footer>
         <!-- footer end -->
     </div>
+    <!-- Maps Floating Button for SmileCore Dental Clinic -->
+<a id="maps-smilecore"
+   class="maps maps-pill"
+   href="https://www.google.com/maps/place/SmileCore+Dental+Clinic/@6.4402761,3.4657289,17z/data=!3m1!4b1!4m6!3m5!1s0x103bf50008bf1331:0xb97a357370ea5bd1!8m2!3d6.4402761!4d3.4657289!16s%2Fg%2F11lty1xp3y?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Leave a review for SmileCore Dental Clinic">
+  <span class="maps-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6 11 6 11s6-5.8 6-11c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+    </svg>
+  </span>
+  <span class="maps-text">Leave a review</span>
+</a>
+
+<!-- Circular compact button version (for mobile) -->
+<a id="maps-smilecore-circle"
+   class="maps maps-circle"
+   href="https://www.google.com/maps/place/SmileCore+Dental+Clinic/@6.4402761,3.4657289,17z/data=!3m1!4b1!4m6!3m5!1s0x103bf50008bf1331:0xb97a357370ea5bd1!8m2!3d6.4402761!4d3.4657289!16s%2Fg%2F11lty1xp3y?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Leave a review for SmileCore">
+  <span class="maps-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6 11 6 11s6-5.8 6-11c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+    </svg>
+  </span>
+</a>
+
+<style>
+.maps {
+  position: fixed;
+  left: 22px;   /* align to left side */
+  bottom: 22px;
+  z-index: 9999;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #000; /* black text for better contrast */
+  background: #FFD700; /* yellow */
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s ease, transform .2s ease;
+}
+
+/* Pill style (desktop) */
+.maps-pill {
+  padding: 12px 18px;
+  border-radius: 46px;
+}
+
+.maps-pill .maps-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.08); /* light contrast for yellow */
+}
+
+.maps-pill .maps-text {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Circular compact style (hidden on large screens) */
+.maps-circle {
+  display: none;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hover / active effects */
+.maps:hover {
+  background: #FFC300; /* deeper yellow on hover */
+  transform: translateY(-2px);
+}
+
+.maps:active {
+  background: #E6B800; /* darker yellow on click */
+  transform: translateY(1px);
+}
+
+/* Responsive: use circle on mobile */
+@media (max-width: 640px) {
+  .maps-pill { display: none; }
+  .maps-circle { display: inline-flex; }
+  .maps { left: 12px; bottom: 12px; }
+}
+</style>
+
 <!-- Floating WhatsApp Button -->
 <a id="whatsapp-float" 
    href="https://wa.me/2347078843508?text=Hello%20I%20want%20to%20chat" 
